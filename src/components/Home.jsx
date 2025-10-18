@@ -11,7 +11,7 @@ function Home() {
     <>
       <div
         id="Home"
-        className=" relative h-[70vh] md:h-[100vh]  w-full  flex flex-col items-center justify-center "
+        className=" relative mt-20 md:mt-0 h-[50vh] md:h-[100vh]  w-full  flex flex-col items-center justify-center "
       >
         <BubbleBackground interactive={true} />
 

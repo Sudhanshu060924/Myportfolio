@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import Projects from "./Projects";
+import { href } from "react-router-dom";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,9 +34,14 @@ function Nav() {
           ))}
         </nav>
 
-        <button className="hidden md:block px-4 py-1 border-2 rounded-md   text-2xl font-[PNeueBit] hover:bg-black/20 transition-all duration-300">
+        <Link
+          to="Contact"
+          smooth={true}
+          duration={500}
+          className="hidden cursor-pointer md:block px-4 py-1 border-2 rounded-md   text-2xl font-[PNeueBit] hover:bg-black/20 transition-all duration-300"
+        >
           Let's Talk
-        </button>
+        </Link>
 
         {/* mobile menu button */}
         <div
@@ -75,9 +81,16 @@ function Nav() {
               {section}
             </Link>
           ))}
-          <button className="px-4 py-1 border-2 rounded-md text-base hover:bg-black/20 transition-all duration-300">
+
+          <Link
+            to="Contact"
+            smooth={true}
+            duration={500}
+            className="px-4 py-1 border-2 rounded-md text-base hover:bg-black/20 transition-all duration-300"
+          >
             Let's Talk
-          </button>
+          </Link>
+         
         </div>
       )}
     </div>
